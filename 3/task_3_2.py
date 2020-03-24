@@ -8,7 +8,7 @@ c_value = float(input())
 left = 0
 right = c_value
 while right - left > eps:
-	middle = left + right / 2
+	middle = (left + right) / 2
 	y = func(middle)
 	if y > c_value:
 		right = middle
